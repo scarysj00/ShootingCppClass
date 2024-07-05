@@ -5,10 +5,11 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
+				"D:/SJ_UE5_Work/ShootingCpp/ShootingCpp/Content/Level/GameMap.umap",
+				"D:/SJ_UE5_Work/ShootingCpp/ShootingCpp/Content/Blueprint/BP_CodingActor.uasset",
 				"S:/PolytechGM/ShootingCppClass/ShootingCpp/Content/StarterContent/Blueprints/Blueprint_CeilingLight.uasset",
 				"S:/PolytechGM/ShootingCppClass/ShootingCpp/Content/Level/PlayerMap.umap",
 				"S:/PolytechGM/ShootingCppClass/ShootingCpp/Content/Blueprint/BP_ShootingCppGameMode.uasset",
-				"S:/PolytechGM/ShootingCppClass/ShootingCpp/Content/Level/GameMap.umap",
 				"S:/PolytechGM/ShootingCppClass/ShootingCpp/Content/Level/GameMap.umap"
 			]
 		}

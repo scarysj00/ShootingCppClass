@@ -1,8 +1,8 @@
 {
 	"SourceFiles": [
-		"S:\\PolytechGM\\ShootingCppClass\\ShootingCpp\\Source\\ShootingCpp\\ShootingCpp.Build.cs",
-		"S:\\PolytechGM\\ShootingCppClass\\ShootingCpp\\Source\\ShootingCpp.Target.cs",
-		"S:\\PolytechGM\\ShootingCppClass\\ShootingCpp\\Source\\ShootingCppEditor.Target.cs"
+		"D:\\SJ_UE5_Work\\ShootingCpp\\ShootingCpp\\Source\\ShootingCpp\\ShootingCpp.Build.cs",
+		"D:\\SJ_UE5_Work\\ShootingCpp\\ShootingCpp\\Source\\ShootingCpp.Target.cs",
+		"D:\\SJ_UE5_Work\\ShootingCpp\\ShootingCpp\\Source\\ShootingCppEditor.Target.cs"
 	],
 	"EngineVersion": "5.3.2"
 }

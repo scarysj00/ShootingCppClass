@@ -25,8 +25,14 @@ public:
 	
 
 public:
+	// (Edit / Visible) + (Anywhere / DefaultsOnly / InstanceOnly)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = MyVariable)
 	int number = 10;				// 4byte 정수형
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = MyVariable)
 	float fNumber = 10.0f;			// 실수형
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = MyVariable)
 	bool bReady = false;			// 논리형
-	FString name = TEXT("폴리텍");	// 문자열
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = MyVariable)
+	FString myName = TEXT(""); // 문자열
 };
