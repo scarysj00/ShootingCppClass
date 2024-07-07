@@ -40,25 +40,44 @@ void ACodingActor::BeginPlay()
 	// 주의할 사항은 기본 C++ 문법에서 안쓰는 것도 있다. printf 안쓴다.
 	// UE_LOG만 쓴다.
 
-	if (myName.Equals(TEXT("Lisa")))
-	{
-		UE_LOG(LogTemp, Warning, TEXT("LVMH 별장에서 쉬고 싶다."));
-	}
-	else if (myName.Equals(TEXT("Jenny")))
-	{
-		UE_LOG(LogTemp, Warning, TEXT("프랑스 남부로 여행가고 싶다."));
-	}
-	else
-	{
-		UE_LOG(LogTemp, Warning, TEXT("집에서 지구마블이나 보고 싶다."));
-	}
+	//if (myName.Equals(TEXT("Lisa")))
+	//{
+	//	UE_LOG(LogTemp, Warning, TEXT("LVMH 별장에서 쉬고 싶다."));
+	//}
+	//else if (myName.Equals(TEXT("Jenny")))
+	//{
+	//	UE_LOG(LogTemp, Warning, TEXT("프랑스 남부로 여행가고 싶다."));
+	//}
+	//else
+	//{
+	//	UE_LOG(LogTemp, Warning, TEXT("집에서 지구마블이나 보고 싶다."));
+	//}
 
+	
+	// 반복문
+	// for (초기값 ; 조건문 ; 증감식)
+	// 0부터 100까지 반복문에서 
+	int sum = 0;
+	for (int i = 0; i <= 100; i++)
+	{
+		// - 50이상 (그리고) 60이하만 출력
+		if (i >= 50 && i <= 60)
+		{
+			UE_LOG(LogTemp, Warning, TEXT("%d"), i);
+		}	
+	}
+	
 }
 
 // Called every frame
 void ACodingActor::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+	//static int a = 10; // 정적 변수
 
+	//if (a == 10)
+	//{
+	//	a = 2;
+	//}
 }
 
