@@ -36,6 +36,9 @@
     <Filter Include="Source\ShootingCpp\Private">
       <UniqueIdentifier>{9457BADE-D61D-3FF8-871A-6F7E5B6F1B3D}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\ShootingCpp\Private\AccessTest.cpp">
+      <Filter>Source\ShootingCpp\Private</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\ShootingCpp\Private\CodingActor.cpp">
       <Filter>Source\ShootingCpp\Private</Filter>
     </ClCompile>
@@ -48,6 +51,9 @@
     <Filter Include="Source\ShootingCpp\Public">
       <UniqueIdentifier>{FDA81618-2A55-329E-B244-F17159620EB6}</UniqueIdentifier>
     </Filter>
+    <ClInclude Include="..\..\Source\ShootingCpp\Public\AccessTest.h">
+      <Filter>Source\ShootingCpp\Public</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\ShootingCpp\Public\CodingActor.h">
       <Filter>Source\ShootingCpp\Public</Filter>
     </ClInclude>

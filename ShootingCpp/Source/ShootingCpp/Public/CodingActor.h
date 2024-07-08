@@ -26,9 +26,9 @@ public:
 
 public:
 	// (Edit / Visible) + (Anywhere / DefaultsOnly / InstanceOnly)
+
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = MyVariable)
 	int number = 10;				// 4byte 정수형
-
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = MyVariable)
 	float fNumber = 10.0f;			// 실수형
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = MyVariable)
