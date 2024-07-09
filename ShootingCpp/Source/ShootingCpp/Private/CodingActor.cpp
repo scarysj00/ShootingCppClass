@@ -57,16 +57,16 @@ void ACodingActor::BeginPlay()
 	// 반복문
 	// for (초기값 ; 조건문 ; 증감식)
 	// 0부터 100까지 반복문에서 
-	int sum = 0;
-	for (int i = 0; i <= 100; i++)
-	{
-		// - 50이상 (그리고) 60이하만 출력
-		if (i >= 50 && i <= 60)
-		{
-			UE_LOG(LogTemp, Warning, TEXT("%d"), i);
-		}	
-	}
-	
+	//int sum = 0;
+	//for (int i = 0; i <= 100; i++)
+	//{
+	//	// - 50이상 (그리고) 60이하만 출력
+	//	if (i >= 50 && i <= 60)
+	//	{
+	//		UE_LOG(LogTemp, Warning, TEXT("%d"), i);
+	//	}	
+	//}
+	//
 }
 
 // Called every frame

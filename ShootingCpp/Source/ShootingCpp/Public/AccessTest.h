@@ -23,9 +23,12 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+	UPROPERTY(EditAnywhere)
+	class ACodingActor* testPointer;
+
 	int32 number;		// 일반 변수
 	int32* numPointer;	// 포인터 변수
 
-	UPROPERTY(EditAnywhere)
-	class ACodingActor* testPointer;
+	void AddPrint(int32 num1, int32 num2, int32* result);
+
 };

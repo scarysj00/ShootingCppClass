@@ -51,13 +51,7 @@ void EmptyLinkFunctionForGeneratedCodeAccessTest() {}
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AAccessTest_Statics::NewProp_testPointer_MetaData[] = {
 		{ "Category", "AccessTest" },
-#if !UE_BUILD_SHIPPING
-		{ "Comment", "// \xed\x8f\xac\xec\x9d\xb8\xed\x84\xb0 \xeb\xb3\x80\xec\x88\x98\n" },
-#endif
 		{ "ModuleRelativePath", "Public/AccessTest.h" },
-#if !UE_BUILD_SHIPPING
-		{ "ToolTip", "\xed\x8f\xac\xec\x9d\xb8\xed\x84\xb0 \xeb\xb3\x80\xec\x88\x98" },
-#endif
 	};
 #endif
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AAccessTest_Statics::NewProp_testPointer = { "testPointer", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AAccessTest, testPointer), Z_Construct_UClass_ACodingActor_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AAccessTest_Statics::NewProp_testPointer_MetaData), Z_Construct_UClass_AAccessTest_Statics::NewProp_testPointer_MetaData) };
@@ -102,9 +96,9 @@ void EmptyLinkFunctionForGeneratedCodeAccessTest() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ShootingCpp_Source_ShootingCpp_Public_AccessTest_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AAccessTest, AAccessTest::StaticClass, TEXT("AAccessTest"), &Z_Registration_Info_UClass_AAccessTest, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AAccessTest), 4041492912U) },
+		{ Z_Construct_UClass_AAccessTest, AAccessTest::StaticClass, TEXT("AAccessTest"), &Z_Registration_Info_UClass_AAccessTest, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AAccessTest), 1330566732U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ShootingCpp_Source_ShootingCpp_Public_AccessTest_h_3215154862(TEXT("/Script/ShootingCpp"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ShootingCpp_Source_ShootingCpp_Public_AccessTest_h_723245264(TEXT("/Script/ShootingCpp"),
 		Z_CompiledInDeferFile_FID_ShootingCpp_Source_ShootingCpp_Public_AccessTest_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ShootingCpp_Source_ShootingCpp_Public_AccessTest_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
