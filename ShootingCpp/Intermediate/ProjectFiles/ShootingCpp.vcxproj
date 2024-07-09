@@ -209,6 +209,11 @@
       <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
       <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
     </ClCompile>
+    <ClCompile Include="..\..\Source\ShootingCpp\Private\PlayerPawn.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+      <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
     <ClCompile Include="..\..\Source\ShootingCpp\Private\ShootingCpp.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
@@ -221,6 +226,7 @@
     </ClCompile>
     <ClInclude Include="..\..\Source\ShootingCpp\Public\AccessTest.h"/>
     <ClInclude Include="..\..\Source\ShootingCpp\Public\CodingActor.h"/>
+    <ClInclude Include="..\..\Source\ShootingCpp\Public\PlayerPawn.h"/>
     <ClInclude Include="..\..\Source\ShootingCpp\Public\ShootingCpp.h"/>
     <ClInclude Include="..\..\Source\ShootingCpp\Public\ShootingCppGameMode.h"/>
   </ItemGroup>
