@@ -10,6 +10,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodePlayerPawn() {}
 // Cross Module References
 	ENGINE_API UClass* Z_Construct_UClass_APawn();
+	ENGINE_API UClass* Z_Construct_UClass_UBoxComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
 	SHOOTINGCPP_API UClass* Z_Construct_UClass_APlayerPawn();
 	SHOOTINGCPP_API UClass* Z_Construct_UClass_APlayerPawn_NoRegister();
@@ -33,6 +34,14 @@ void EmptyLinkFunctionForGeneratedCodePlayerPawn() {}
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_cube_MetaData[];
 #endif
 		static const UECodeGen_Private::FObjectPropertyParams NewProp_cube;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_box_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_box;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_Speed_MetaData[];
+#endif
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_Speed;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -44,9 +53,15 @@ void EmptyLinkFunctionForGeneratedCodePlayerPawn() {}
 	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_APlayerPawn_Statics::DependentSingletons) < 16);
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APlayerPawn_Statics::Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "// class UBoxComponent; \xec\xa0\x84\xeb\xb0\xa9\xec\x84\xa0\xec\x96\xb8 forward declaration\n" },
+#endif
 		{ "HideCategories", "Navigation" },
 		{ "IncludePath", "PlayerPawn.h" },
 		{ "ModuleRelativePath", "Public/PlayerPawn.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "class UBoxComponent; \xec\xa0\x84\xeb\xb0\xa9\xec\x84\xa0\xec\x96\xb8 forward declaration" },
+#endif
 	};
 #endif
 #if WITH_METADATA
@@ -57,8 +72,31 @@ void EmptyLinkFunctionForGeneratedCodePlayerPawn() {}
 	};
 #endif
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APlayerPawn_Statics::NewProp_cube = { "cube", nullptr, (EPropertyFlags)0x0010000000080009, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(APlayerPawn, cube), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_APlayerPawn_Statics::NewProp_cube_MetaData), Z_Construct_UClass_APlayerPawn_Statics::NewProp_cube_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APlayerPawn_Statics::NewProp_box_MetaData[] = {
+		{ "Category", "PlayerPawn" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/PlayerPawn.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APlayerPawn_Statics::NewProp_box = { "box", nullptr, (EPropertyFlags)0x0010000000080009, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(APlayerPawn, box), Z_Construct_UClass_UBoxComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_APlayerPawn_Statics::NewProp_box_MetaData), Z_Construct_UClass_APlayerPawn_Statics::NewProp_box_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APlayerPawn_Statics::NewProp_Speed_MetaData[] = {
+		{ "Category", "PlayerPawn" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "// \xed\x8f\xac\xec\x9d\xb8\xed\x84\xb0 \xeb\xb3\x80\xec\x88\x98 \xec\x84\xa0\xec\x96\xb8 \xec\x8b\x9c class\xec\x9d\x98 \xec\x9d\x98\xeb\xaf\xb8\xeb\x8a\x94 \xec\xa0\x84\xeb\xb0\xa9\xec\x84\xa0\xec\x96\xb8\xec\x9d\xb4\xeb\x8b\xa4.\n" },
+#endif
+		{ "ModuleRelativePath", "Public/PlayerPawn.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "\xed\x8f\xac\xec\x9d\xb8\xed\x84\xb0 \xeb\xb3\x80\xec\x88\x98 \xec\x84\xa0\xec\x96\xb8 \xec\x8b\x9c class\xec\x9d\x98 \xec\x9d\x98\xeb\xaf\xb8\xeb\x8a\x94 \xec\xa0\x84\xeb\xb0\xa9\xec\x84\xa0\xec\x96\xb8\xec\x9d\xb4\xeb\x8b\xa4." },
+#endif
+	};
+#endif
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_APlayerPawn_Statics::NewProp_Speed = { "Speed", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(APlayerPawn, Speed), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_APlayerPawn_Statics::NewProp_Speed_MetaData), Z_Construct_UClass_APlayerPawn_Statics::NewProp_Speed_MetaData) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_APlayerPawn_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerPawn_Statics::NewProp_cube,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerPawn_Statics::NewProp_box,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerPawn_Statics::NewProp_Speed,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_APlayerPawn_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<APlayerPawn>::IsAbstract,
@@ -98,9 +136,9 @@ void EmptyLinkFunctionForGeneratedCodePlayerPawn() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ShootingCpp_Source_ShootingCpp_Public_PlayerPawn_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_APlayerPawn, APlayerPawn::StaticClass, TEXT("APlayerPawn"), &Z_Registration_Info_UClass_APlayerPawn, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APlayerPawn), 2499690935U) },
+		{ Z_Construct_UClass_APlayerPawn, APlayerPawn::StaticClass, TEXT("APlayerPawn"), &Z_Registration_Info_UClass_APlayerPawn, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APlayerPawn), 2760311521U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ShootingCpp_Source_ShootingCpp_Public_PlayerPawn_h_990215981(TEXT("/Script/ShootingCpp"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ShootingCpp_Source_ShootingCpp_Public_PlayerPawn_h_857927004(TEXT("/Script/ShootingCpp"),
 		Z_CompiledInDeferFile_FID_ShootingCpp_Source_ShootingCpp_Public_PlayerPawn_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ShootingCpp_Source_ShootingCpp_Public_PlayerPawn_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

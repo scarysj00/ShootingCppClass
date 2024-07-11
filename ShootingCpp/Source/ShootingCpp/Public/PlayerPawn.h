@@ -6,6 +6,8 @@
 #include "GameFramework/Pawn.h"
 #include "PlayerPawn.generated.h"
 
+// class UBoxComponent; 전방선언 forward declaration
+
 UCLASS()
 class SHOOTINGCPP_API APlayerPawn : public APawn
 {
@@ -29,4 +31,15 @@ public:
 public:
 	UPROPERTY(EditAnywhere)
 	UStaticMeshComponent* cube;
+
+	UPROPERTY(EditAnywhere)
+	class UBoxComponent* box; // 포인터 변수 선언 시 class의 의미는 전방선언이다.
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	float Speed = 500.f;
+
+	float H, V;
+	// cpp 에서 다른 공간에 작성한 기능들을 Tick 에서 변수를 기억하고 있다가 호출한다.
+	void AxisHorizontal(float value);
+	void AxisVertical(float value);
 };
