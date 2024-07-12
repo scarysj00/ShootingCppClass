@@ -204,6 +204,11 @@
       <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
       <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
     </ClCompile>
+    <ClCompile Include="..\..\Source\ShootingCpp\Private\Bullet.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+      <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
     <ClCompile Include="..\..\Source\ShootingCpp\Private\CodingActor.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
@@ -225,6 +230,7 @@
       <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClInclude Include="..\..\Source\ShootingCpp\Public\AccessTest.h"/>
+    <ClInclude Include="..\..\Source\ShootingCpp\Public\Bullet.h"/>
     <ClInclude Include="..\..\Source\ShootingCpp\Public\CodingActor.h"/>
     <ClInclude Include="..\..\Source\ShootingCpp\Public\PlayerPawn.h"/>
     <ClInclude Include="..\..\Source\ShootingCpp\Public\ShootingCpp.h"/>
