@@ -41,6 +41,9 @@ public:
 	UPROPERTY(EditAnywhere)
 	TSubclassOf<class ABullet> BulletFactory;
 
+	UPROPERTY(EditAnywhere)
+	USoundBase* FireSound;
+
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	float Speed = 500;
 
@@ -49,5 +52,14 @@ public:
 	void AxisHorizontal(float value);
 	void AxisVertical(float value);
 
-	void ActionFire();
+	// 자동 총쏘기 기능을 만든다.
+	// - 속성 : 누르고 있는 상태, 현재시간, 총알이 발사되는 시간 (Interval)
+	// - 기능 : 눌렀다(총알을 만든다). 뗏다.
+	bool bAutoFire;
+	float CurrentTime;
+	float MakeTime = 0.5f;
+	void ActionFirePressed();
+	void ActionFireReleased();
+
+	void MakeBullet(); 
 };

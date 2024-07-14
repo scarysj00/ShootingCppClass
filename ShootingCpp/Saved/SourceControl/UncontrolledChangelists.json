@@ -5,6 +5,14 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
+				"S:/PolytechGM/ShootingCppClass/ShootingCpp/Content/StarterContent/Blueprints/Blueprint_CeilingLight.uasset",
+				"S:/PolytechGM/ShootingCppClass/ShootingCpp/Content/Level/PlayerMap.umap",
+				"S:/PolytechGM/ShootingCppClass/ShootingCpp/Content/Blueprint/BP_ShootingCppGameMode.uasset",
+				"S:/PolytechGM/ShootingCppClass/ShootingCpp/Content/Level/GameMap.umap",
+				"S:/PolytechGM/TestShootingCpp/ShootingCpp/Content/Level/GameMap.umap",
+				"S:/PolytechGM/TestShootingCpp/ShootingCpp/Content/Blueprint/BP_CodingActor.uasset",
+				"S:/PolytechGM/TestShootingCpp/ShootingCpp/Content/SFX/FireSound.uasset",
+				"S:/PolytechGM/TestShootingCpp/ShootingCpp/Content/Blueprint/BP_PlayerPawn.uasset",
 				"D:/SJ_UE5_Work/ShootingCpp/ShootingCpp/Content/Level/GameMap.umap",
 				"D:/SJ_UE5_Work/ShootingCpp/ShootingCpp/Content/Blueprint/Coding/BP_CodingActor.uasset",
 				"D:/SJ_UE5_Work/ShootingCpp/ShootingCpp/Content/Blueprint/Coding/BP_AccessTest.uasset",
@@ -12,13 +20,7 @@
 				"D:/SJ_UE5_Work/ShootingCpp/ShootingCpp/Content/Blueprint/BP_ShootingCppGameMode.uasset",
 				"D:/SJ_UE5_Work/ShootingCpp/ShootingCpp/Content/Blueprint/BP_CodingActor.uasset",
 				"D:/SJ_UE5_Work/ShootingCpp/ShootingCpp/Content/Blueprint/BP_AccessTest.uasset",
-				"D:/SJ_UE5_Work/ShootingCpp/ShootingCpp/Content/Blueprint/BP_Bullet.uasset",
-				"S:/PolytechGM/ShootingCppClass/ShootingCpp/Content/StarterContent/Blueprints/Blueprint_CeilingLight.uasset",
-				"S:/PolytechGM/ShootingCppClass/ShootingCpp/Content/Level/PlayerMap.umap",
-				"S:/PolytechGM/ShootingCppClass/ShootingCpp/Content/Blueprint/BP_ShootingCppGameMode.uasset",
-				"S:/PolytechGM/ShootingCppClass/ShootingCpp/Content/Level/GameMap.umap",
-				"S:/PolytechGM/TestShootingCpp/ShootingCpp/Content/Level/GameMap.umap",
-				"S:/PolytechGM/TestShootingCpp/ShootingCpp/Content/Blueprint/BP_CodingActor.uasset"
+				"D:/SJ_UE5_Work/ShootingCpp/ShootingCpp/Content/Blueprint/BP_Bullet.uasset"
 			]
 		}
 	]

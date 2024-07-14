@@ -5,6 +5,8 @@
 #include "Components/BoxComponent.h"
 #include "Components/ArrowComponent.h"
 #include "Bullet.h"
+#include "Kismet/GameplayStatics.h"
+
 
 // Sets default values
 APlayerPawn::APlayerPawn()
@@ -42,6 +44,8 @@ void APlayerPawn::BeginPlay()
 void APlayerPawn::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+	
+#pragma region Move
 	// P = P0 + VT
 	FVector P0 = GetActorLocation();
 	FVector Dir(0, H, V);
@@ -50,6 +54,24 @@ void APlayerPawn::Tick(float DeltaTime)
 	FVector Velocity = Dir * Speed;
 	SetActorLocation(P0 + Velocity * DeltaTime);
 	// SetActorLocation(GetActorLocation() + Dir * Speed * DeltaTime); 한 줄로 작성 가능
+#pragma endregion
+
+#pragma region AutoFire
+	// 만약 bAutoFire가 true라면
+	if (true == bAutoFire)
+	{
+		// 시간이 흐르다가
+		CurrentTime += DeltaTime;
+		// 현재시간이 생성시간이 되면
+		if (CurrentTime > MakeTime)
+		{
+			// MakeBullet 함수를 호출한다.
+			MakeBullet();
+			// 현재시간을 0으로 초기화 한다.
+			CurrentTime = 0;
+		}	
+	}
+#pragma endregion
 
 }
 
@@ -62,7 +84,8 @@ void APlayerPawn::SetupPlayerInputComponent(UInputComponent* PlayerInputComponen
 	PlayerInputComponent->BindAxis(TEXT("Horizontal"), this, &APlayerPawn::AxisHorizontal);
 	PlayerInputComponent->BindAxis(TEXT("Vertical"), this, &APlayerPawn::AxisVertical);
 
-	PlayerInputComponent->BindAction(TEXT("Fire"), IE_Pressed, this, &APlayerPawn::ActionFire);
+	PlayerInputComponent->BindAction(TEXT("Fire"), EInputEvent::IE_Pressed, this, &APlayerPawn::ActionFirePressed);
+	PlayerInputComponent->BindAction(TEXT("Fire"), EInputEvent::IE_Released, this, &APlayerPawn::ActionFireReleased);
 }
 
 void APlayerPawn::AxisHorizontal(float value)
@@ -75,8 +98,26 @@ void APlayerPawn::AxisVertical(float value)
 	V = value;
 }
 
-void APlayerPawn::ActionFire()
+void APlayerPawn::ActionFirePressed()
 {
-	ABullet* bullet = GetWorld()->SpawnActor<ABullet>(BulletFactory, Arrow->GetComponentTransform());
+	// 자동 총쏘기를 활성화한다.
+	bAutoFire = true;
+	// 현재 시간을 0으로 초기화 한다.
+	CurrentTime = 0;
+	MakeBullet();
+}
+
+void APlayerPawn::ActionFireReleased()
+{
+	// 자동 총쏘기를 멈춘다.
+	bAutoFire = false;
+
+}
+
+void APlayerPawn::MakeBullet()
+{
+	GetWorld()->SpawnActor<ABullet>(BulletFactory, Arrow->GetComponentTransform());
+
+	UGameplayStatics::PlaySound2D(GetWorld(), FireSound);
 }
 

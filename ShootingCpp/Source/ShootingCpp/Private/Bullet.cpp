@@ -36,7 +36,7 @@ void ABullet::Tick(float DeltaTime)
 	// 총알이 앞 방향으로 계속 이동하게 생성한다.
 	// P = P0 + VT
 	FVector  P0 = GetActorLocation();
-	FVector Velocity = GetActorForwardVector();
+	FVector Velocity = GetActorForwardVector() * Speed;
 	SetActorLocation(P0 + Velocity * DeltaTime);
 }
 
